@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Menu</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+
+
+.header {
+  font-family: cursive;
+  border:  2.5px  dotted Dodgerblue;
+  
+}
+
+
+.dropbt {
+  background-color: white;
+  border:none;
+  color: black;
+}
+
+.down {
+  position: relative;
+  display: block;
+}
+
+.down-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 90px;
+  margin-top:-50px;
+ 
+  margin:55px;
+
+  border-radius:10px 10px;
+  width:200px;
+  height:200px;
+  box-shadow:-20px 10px 10px #888888;
+  z-index: 1;
+}
+
+.down-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: cursive;
+}
+
+
+.image {
+  border-radius:50px 15px;
+
+
+
+}
+
+
+
+
+
+
+
+.down:hover .down-content {display: block;}
+
+</style>
+</head>
+<body>
+
+<h1 class="header">DM Menu</h1>
+
+<div class="down">
+  <button class="dropbt">
+  <p class="fa fa-user" font-size:45px></p>Login
+  </button>
+  <div class="down-content">
+  
+  <img src="/storage/emulated/10/Download/download.jpeg" alt="user" style="padding:0px 65px;" width="45px" class="image">
+  <br>
+ 
+  <form>
+  <p class="fa fa-user"></p>
+    <input type="email" style=" border:none; border-radius:5px 5px;" placeholder="Email.... "  required>
+  
+    
+    <br>
+   <p class="fa fa-lock"></p>
+    <input type="password" style="border:none; border-radius:5px 5px;" placeholder="password.... "  required>
+    <br>
+    
+  <button type="submit" style="border:none; background-color:white; box-shadow:5px 5px 2.5px #888888;">Login</button>
+</form> 
+    
+   
+  </div>
+</div>
+
+
+
+
+</body>
+</html>
